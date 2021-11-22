@@ -7,17 +7,42 @@
 <body>
 
 	<h1>Spring Boot Microservices Example</h1>
-	<h3>Addition Service</h3>
+	<h3>Three numbers Addition Service</h3>
 	<form action="/add">
 	  	First number:<br>
 	  	<input type="number" name="addend1" value="0">
 	  	<br>
 	  	Second number<br>
 	  	<input type="number" name="addend2" value="0">
+		<br>
+		Third number<br>
+		<input type="number" name="addend3" value="0">
 	  	<br><br>
 	  	<input type="submit" value="Submit">
-	</form>	
+	</form>
+	<h3>two numbers Addition Service</h3>
+	<form action="/tadd">
+		First number:<br>
+		<input type="number" name="addend1" value="0">
+		<br>
+		Second number<br>
+		<input type="number" name="addend2" value="0">
+		<br><br>
+		<input type="submit" value="Submit">
+	</form>
 	<hr>
+	<h3>two numbers Addition Service</h3>
+	<form action="/multi">
+		First number:<br>
+		<input type="number" name="addend1" value="1">
+		<br>
+		Second number<br>
+		<input type="number" name="addend2" value="1">
+		<br><br>
+		<input type="submit" value="Submit">
+	</form>
+	<hr>
+	<h3>Subtraction Service</h3>
 	<form action="/subtract">
 	  	First number:<br>
 	  	<input type="number" name="minuend" value="0">
