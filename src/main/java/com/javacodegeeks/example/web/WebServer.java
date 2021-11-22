@@ -15,8 +15,6 @@ public class WebServer {
 
 	public static final String ADDITION_SERVICE_URL = "http://addition-service";
 
-	public static final String MULTIPLICATION_SERVICE_URL = "http://multiplication-service";
-
 	public static final String SUBTRACTION_SERVICE_URL = "http://subtraction-service";
 
 	public static void main(String[] args) {
@@ -36,13 +34,8 @@ public class WebServer {
 	}
 
 	@Bean
-	public WebMultiplicationService multiplicationService() {
-		return new WebMultiplicationService(MULTIPLICATION_SERVICE_URL);
-	}
-
-	@Bean
 	public WebArithmeticController additionController() {
-		return new WebArithmeticController(additionService(), subtractionService(), multiplicationService());
+		return new WebArithmeticController(additionService(), subtractionService());
 	}
 
 	@Bean

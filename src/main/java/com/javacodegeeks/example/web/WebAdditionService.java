@@ -24,11 +24,7 @@ public class WebAdditionService {
 				: "http://" + serviceUrl;
 	}
 
-	public String add(String addend1, String addend2, String addend3) {
-		return restTemplate.getForObject(serviceUrl + "/add?addend1={addend1}&addend2={addend2}&addend3={addend3}", String.class, addend1, addend2, addend3);
-	}
-
 	public String add(String addend1, String addend2) {
-		return restTemplate.getForObject(serviceUrl + "/tadd?addend1={addend1}&addend2={addend2}", String.class, addend1, addend2);
+		return restTemplate.getForObject(serviceUrl + "/add?addend1={addend1}&addend2={addend2}", String.class, addend1, addend2);
 	}
 }
