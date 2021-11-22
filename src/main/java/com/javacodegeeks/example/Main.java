@@ -2,7 +2,6 @@ package com.javacodegeeks.example;
 
 import com.javacodegeeks.example.registration.EurekaServer;
 import com.javacodegeeks.example.rest.addition.AdditionServer;
-import com.javacodegeeks.example.rest.multiplication.MultiplicationServer;
 import com.javacodegeeks.example.rest.subtraction.SubtractionServer;
 import com.javacodegeeks.example.web.WebServer;
 
@@ -28,8 +27,6 @@ public class Main {
 			AdditionServer.main(args);
 		} else if (serverName.equals("subtraction")) {
 			SubtractionServer.main(args);
-		} else if (serverName.equals("multiplication")) {
-			MultiplicationServer.main(args);
 		} else if (serverName.equals("web")) {
 			WebServer.main(args);
 		} else {
