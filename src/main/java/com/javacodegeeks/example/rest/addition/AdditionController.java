@@ -15,7 +15,7 @@ public class AdditionController {
 	@RequestMapping("/add")
 	public String doAdd(@RequestParam(defaultValue="0") String addend1,
 			@RequestParam(defaultValue="0") String addend2) {
-
+		logger.info("In Addition Controller");
 		int augend1 = Integer.valueOf(addend1);
 		int augend2 = Integer.valueOf(addend2);
 		int sum = augend1 + augend2;
