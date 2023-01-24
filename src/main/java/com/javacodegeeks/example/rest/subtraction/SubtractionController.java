@@ -14,7 +14,7 @@ public class SubtractionController {
 	@RequestMapping("/subtract")
 	public String doSubtract(@RequestParam(defaultValue="0") String minuend,
 			@RequestParam(defaultValue="0") String subtrahend) {
-
+		logger.info("In Subtraction Controller");
 		int m = Integer.valueOf(minuend);
 		int s = Integer.valueOf(subtrahend);
 		int difference = m - s;
